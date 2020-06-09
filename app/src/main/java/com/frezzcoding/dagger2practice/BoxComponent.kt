@@ -1,4 +1,8 @@
 package com.frezzcoding.dagger2practice
 
-class BoxComponent {
+import dagger.Component
+
+@Component(modules = [Bag::class])
+interface BoxComponent {
+    fun inject(app : MainActivity)
 }
