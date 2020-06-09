@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         DaggerBoxComponent.builder().build().inject(this)
+        println("$loveInfo.text ${hateInfo.text}")
 
     }
 }
